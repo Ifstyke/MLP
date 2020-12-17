@@ -10,6 +10,7 @@ data=read_csv(filename,names=names)
 
 # 将数据分为输入数据和输出结果
 array=data.values
+print(array)
 X=array[:,0:8]
 Y=array[:,8]
 transformer=Binarizer(threshold=0.0).fit(X)
