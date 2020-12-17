@@ -12,6 +12,8 @@ data=read_csv(filename,names=names)
 array=data.values
 print(array)
 X=array[:,0:8]
+print(X)
+print(Y)
 Y=array[:,8]
 transformer=Binarizer(threshold=0.0).fit(X)
 
